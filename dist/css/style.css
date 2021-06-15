@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Lato:wght@300&family=Marcellus+SC&family=Monoton&family=Montserrat:wght@500&family=Squada+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    background: #f2f3f7;
+    height: 220vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 3rem;
+    font-family: 'Bowlby One SC', cursive;
+    letter-spacing: 10px;
+}
+
+.container {
+    width: 600px;
+    background: #f2f3f7;
+    padding: 10px;
+    height: 220vh;
+    /*border: 1px solid #000;*/
+    transition: all .5s;
+}
+
+/*.container:hover {
+    box-shadow: inset -2px -4px 6px rgba(255, 255, 255, 1),
+                inset -4px -6px 8px rgba(255, 255, 255, .6),
+                inset -6px -8px 12px rgba(255, 255, 255, .2),
+                inset 2px 4px 6px rgba(0, 0, 0, .25),
+                inset 4px 6px 8px rgba(109, 65, 65, 0.15),
+                inset 6px 8px 12px rgba(0, 0, 0, .1)
+            ;
+}*/
+
+.month_card {
+    position: absolute;
+    left: 50%;
+    top: 150%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 10px;
+    text-align: center;
+    /*border: 1px solid #000;*/
+    border-radius: 20px;
+    background: #f2f3f7;
+    transition: all .1s;
+    box-shadow: -2px -4px 6px rgba(255, 255, 255, .4),
+                -4px -6px 8px rgba(255, 255, 255, .3),
+                -6px -8px 12px rgba(255, 255, 255, .2),
+                -8px -10px 16px rgba(255, 255, 255, .1),
+                2px 4px 6px rgba(0, 0, 0, .2),
+                4px 6px 8px rgba(0, 0, 0, .15),
+                6px 8px 12px rgba(0, 0, 0, .1),
+                8px 10px 16px rgba(0, 0, 0, .05)
+            ;
+}
+
+.upper_part {
+    background: #f2f3f7;
+    padding: 24px;
+}
+
+.fa-angle-left {
+    float: left;
+    font-size: 28px;
+    vertical-align: center;
+}
+
+.left_btn {
+    float: left;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.right_btn {
+    float: right;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.month {
+    font-size: 22px;
+    font-family: 'Marcellus SC', serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #CD5C5C;
+    letter-spacing: 2px;
+}
+
+.year {
+    font-size: 22px;
+    font-family: 'Marcellus SC', serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #CD5C5C;
+}
+
+.fa-angle-right {
+    float: right;
+    font-size: 28px;
+    vertical-align: center;
+}
+
+.middle_part {
+    margin: 0;
+    padding: 30px 10px; 
+    transition: all .5s;
+}
+
+.day {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 4px;
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, .8);
+    margin-bottom: 15px;
+    box-shadow: -2px -4px 6px rgba(255, 255, 255, .6),
+                -4px -6px 8px rgba(255, 255, 255, .5),
+                -6px -8px 12px rgba(255, 255, 255, .4),
+                -8px -10px 16px rgba(255, 255, 255, .3),
+                2px 4px 6px rgba(0, 0, 0, .2),
+                4px 6px 8px rgba(0, 0, 0, .15),
+                6px 8px 12px rgba(0, 0, 0, .1),
+                8px 10px 16px rgba(0, 0, 0, .05)
+            ;
+}
+
+.date {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    padding: 8px;
+    color: #4A235A;
+    color: #154360;
+    /*border: 1px solid #000;*/
+    border-radius: 40px;
+    box-sizing: border-box;
+    box-shadow: -2px -4px 6px rgba(255, 255, 255, 1),
+                -4px -6px 8px rgba(255, 255, 255, .6),
+                -6px -8px 12px rgba(255, 255, 255, .2),
+                -8px -10px 16px rgba(255, 255, 255, .2),
+                2px 4px 6px rgba(0, 0, 0, .3),
+                4px 6px 8px rgba(0, 0, 0, .2),
+                6px 8px 12px rgba(0, 0, 0, .1),
+                8px 10px 16px rgba(0, 0, 0, .05)
+            ;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.date:hover {
+    box-shadow: inset -2px -4px 6px rgba(255, 255, 255, 1),
+                inset -4px -6px 8px rgba(255, 255, 255, .6),
+                inset -6px -8px 12px rgba(255, 255, 255, .2),
+                inset 2px 4px 6px rgba(0, 0, 0, .25),
+                inset 4px 6px 8px rgba(109, 65, 65, 0.15),
+                inset 6px 8px 12px rgba(0, 0, 0, .1)
+            ;
+}
+
+.date:focus {
+    background: #06CF9E;
+}
+.active {
+    background-color: #06CF9E;
+}
+
+.date_card {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 48.5%;
+    /*border: 1px solid #000;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background: #f2f3f7;
+    box-shadow: -2px -4px 6px rgba(255, 255, 255, .4),
+                -4px -6px 8px rgba(255, 255, 255, .3),
+                -6px -8px 12px rgba(255, 255, 255, .2),
+                -8px -10px 16px rgba(255, 255, 255, .1),
+                2px 4px 6px rgba(0, 0, 0, .2),
+                4px 6px 8px rgba(0, 0, 0, .15),
+                6px 8px 12px rgba(0, 0, 0, .1),
+                8px 10px 16px rgba(0, 0, 0, .05)
+            ;
+    transition: all .1s;
+}
+
+.today_day {
+    font-size: 30px;
+    padding: 30px 0px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    /*border: 1px solid #000;*/
+    background: #FFA07A;
+    color: #f2f3f7;
+}
+
+.today_date {
+    font-size: 140px;
+    margin-top: 60px;
+    padding: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Squada One', cursive;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #1A8BB6;
+    text-shadow: 2px 2px 2px #1A8BB6;
+    /*border: 1px solid #000;*/
+}
+
+.today_month {
+    font-size: 30px;
+    padding: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #154360;
+    /*border: 1px solid #000;*/
+}
+
+.this_year {
+    font-size: 30px;
+    padding: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #76448A;
+    /*border: 1px solid #000;*/
+}
+
+.days {
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 26px;
+    grid-template-areas: "one two three four five six seven";
+    transition: all .5s;
+}
+
+.day_name {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 0px 10px;
+}

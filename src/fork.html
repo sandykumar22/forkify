@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/forkifyy.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>forkify // Search over 1,000,000 recipes</title>
+</head>
+<body>
+    <div class = "container">
+        <div class = "header">
+                <img src = "img/logo.png" alt = "forkify" class = "header_logo"></img>
+                <form class = "search">
+                    <input type = "text" name = "recipe" placeholder = "Search over 1,000,000 recipes..." class = "search_field">
+                    <button class = "btn search_btn" type = "submit">
+                        <i class = "fa fa-search"></i><span>Search</span>
+                    </button>
+                </form>
+            <div class = "favourite">
+                <div class = "like_btn">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                </div>
+                <div class = "fav-items">
+                    <ul class = "fav-list">
+                        <!--<li>
+                            <a class = "fav_list_items" href = "#">
+                                <img src = "img/test-1.jpg" class = "list_img">
+                                <div class = "item_desc">
+                                    <span id = "desc_red">pasta with tomato ...</span>
+                                    <p id = "tag">The pioneer women</p>
+                                </div>
+                            </a> 
+                        </li>--> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class = "results">
+            <ul class = "results_list">
+                <!--<a class = "result_list_item active" href = "#">
+                    <img src = "img/test-1.jpg" class = "list_img">
+                    <div class = "item_desc">
+                        <span id = "desc_red">pasta with tomato ...</span>
+                        <p id = "tag">The pioneer women</p>
+                    </div>
+                </a>
+                <a class = "result_list_item" href = "#">
+                    <img src = "img/test-1.jpg" class = "list_img">
+                    <div class = "item_desc">
+                        <span id = "desc_red">pasta with tomato ...</span>
+                        <p id = "tag">The pioneer women</p>
+                    </div>
+                </a>
+                <a class = "result_list_item" href = "#">
+                    <img src = "img/test-1.jpg" class = "list_img">
+                    <div class = "item_desc">
+                        <span id = "desc_red">pasta with tomato ...</span>
+                        <p id = "tag">The pioneer women</p>
+                    </div>
+                </a>        
+                <a class = "result_list_item" href = "#">
+                    <img src = "img/test-1.jpg" class = "list_img">
+                    <div class = "item_desc">
+                        <span id = "desc_red">pasta with tomato ...</span>
+                        <p id = "tag">The pioneer women</p>
+                    </div>
+                </a>        
+                <a class = "result_list_item" href = "#">
+                    <img src = "img/test-1.jpg" class = "list_img">
+                    <div class = "item_desc">
+                        <span id = "desc_red">pasta with tomato ...</span>
+                        <p id = "tag">The pioneer women</p>
+                    </div>
+                </a>                 
+                <a class = "result_list_item" href = "#">
+                    <img src = "img/test-1.jpg" class = "list_img">
+                    <div class = "item_desc">
+                        <span id = "desc_red">pasta with tomato ...</span>
+                        <p id = "tag">The pioneer women</p>
+                    </div>
+                </a>        
+                <a class = "result_list_item" href = "#">
+                    <img src = "img/test-1.jpg" class = "list_img">
+                    <div class = "item_desc">
+                        <span id = "desc_red">pasta with tomato ...</span>
+                        <p id = "tag">The pioneer women</p>
+                    </div>
+                </a>        
+                <a class = "result_list_item" href = "#">
+                    <img src = "img/test-1.jpg" class = "list_img">
+                    <div class = "item_desc">
+                        <span id = "desc_red">pasta with tomato ...</span>
+                        <p id = "tag">The pioneer women</p>
+                    </div>
+                </a>
+                <a class = "result_list_item" href = "#">
+                    <img src = "img/test-1.jpg" class = "list_img">
+                    <div class = "item_desc">
+                        <span id = "desc_red">pasta with tomato ...</span>
+                        <p id = "tag">The pioneer women</p>
+                    </div>
+                </a>        
+                <a class = "result_list_item" href = "#">
+                    <img src = "img/test-1.jpg" class = "list_img">
+                    <div class = "item_desc">
+                        <span id = "desc_red">pasta with tomato ...</span>
+                        <p id = "tag">The pioneer women</p>
+                    </div>
+                </a>-->       
+            </ul>
+            <div class = "result_pages">
+                <!--<button class = "prev_page">
+                    <i class = "fa fa-caret-left"></i>
+                    <span>page 1</span>
+                </button>
+                <button class = "next_page">
+                    <span>page 3</span>
+                    <i class = "fa fa-caret-right"></i>
+                </button>-->
+            </div>
+        </div>
+        <div class = "recipe">
+            <!--<div class = "item_img">
+                <img src = "img/test-1.jpg" class = "recipe_img">
+                <h1 class = "recipe_name">
+                    <span>pasta with tomato cream sauce</span>
+                </h1>
+            </div>
+            <div class = "recipe_info">
+                <div class = "recipe_time_info">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span class = "recipe_info_in_num">60</span>
+                        <span class = "recipe_info_in_min">minutes</span>                    
+                </div>
+                <div class = "recipe_servings">
+                    <i class = "fa fa-male"></i>
+                        <span class = "recipe_no_of_servings">4</span>
+                        <span class = "recipe_in_servs">servings</span>
+                    <div class = "recipe_minus_serve">
+                        <i class = "fa fa-minus"></i>
+                    </div>
+                    <div class = "recipe_plus_serve">
+                        <i class = "fa fa-plus"></i>
+                    </div>
+                </div>
+                <button class = "recipe_love">
+                    <i class = "fa fa-heart"></i>
+                </button>
+            </div>
+            <div class = "recipe_content">
+                <ul class = "recipe_ingredients">
+
+                    <li class = "recipe_ingredients_list">
+                        
+                            <i class = "fa fa-check-circle-o"></i>
+                        
+                        <span class = "recipe_count">1000</span>
+                        <span class = "recipe_unit">g</span>
+                        <span class = "recipe_item_needed">pasta</span>
+                    </li>
+
+                    <li class = "recipe_ingredients_list">
+                        
+                            <i class = "fa fa-check-circle-o"></i>
+                        
+                        <span class = "recipe_unit">cup</span>
+                        <span class = "recipe_item_needed">ricotta cheese</span>
+                    </li>
+                
+                    <li class = "recipe_ingredients_list">
+                        
+                            <i class = "fa fa-check-circle-o"></i>
+                        
+                        <span class = "recipe_count">1</span>
+                        <span class = "recipe_unit"></span>
+                        <span class = "recipe_item_needed">can of tomatoes, whole or crushed</span>
+                    </li>
+
+                    <li class = "recipe_ingredients_list">
+                       
+                            <i class = "fa fa-check-circle-o"></i>
+                        
+                        <span class = "recipe_count">1</span>
+                        <span class = "recipe_unit"></span>
+                        <span class = "recipe_item_needed">can tuna packed in olive oil</span>
+                    </li>
+                
+                
+                    <li class = "recipe_ingredients_list">
+                       
+                            <i class = "fa fa-check-circle-o"></i>
+                       
+                        <span class = "recipe_count">1/2</span>
+                        <span class = "recipe_unit">cup</span>
+                        <span class = "recipe_item_needed">grated parmesan cheese</span>
+                    </li>
+
+                    <li class = "recipe_ingredients_list">
+                        
+                            <i class = "fa fa-check-circle-o"></i>
+                        
+                        <span class = "recipe_count">1/4</span>
+                        <span class = "recipe_unit">cup</span>
+                        <span class = "recipe_item_needed">fresh basil, chopped or torn</span>
+                    </li>
+                
+                
+                    <li class = "recipe_ingredients_list">
+                        
+                            <i class = "fa fa-check-circle-o"></i>
+                        
+                        <span class = "recipe_count">1000</span>
+                        <span class = "recipe_unit">g</span>
+                        <span class = "recipe_item_needed">pasta</span>
+                    </li>
+
+                    <li class = "recipe_ingredients_list">
+                        
+                            <i class = "fa fa-check-circle-o"></i>
+                        
+                        <span class = "recipe_count">1/2</span>
+                        <span class = "recipe_unit">cup</span>
+                        <span class = "recipe_item_needed">ricotta cheese</span>
+                    </li>
+                    
+                </ul>
+                <div class = "shopping_cart">
+                    <button class = "shop_cart">
+                        <i class = "fa fa-shopping-cart"></i>
+                        <span>Add to shopping list</span>
+                    </button>
+                </div>
+            </div>
+            <div class = "cooking_instructions">
+                <h2 class = "recipe_instruct_title">How to cook it</h2>
+                <h4 class = "recipe_tester">This recipe was carefully designed and tested by <span class = "recipe_chef">The Pioneer Woman</span>. Please check out directions at their website.</h4>
+                <button class = "recipe_direction"> 
+                    <a href = "#">directions
+                        <i class = "fa fa-arrow-circle-o-right"></i>
+                    </a>
+                </button>
+            </div>-->
+        </div>
+        <div class = "shopping">
+            <h2 class = "header_2">My Shopping List</h2>
+            <ul class = "shopping_items">
+                <!--<li class = "shopping_list">
+                    <div class = "shopping_item_quantity">
+                        <input type = "number" step = "100" value = "500" class = "shop_item_count">
+                        <p>g</p>
+                    </div>
+                        <span class = "shopping_item_name">Pasta</span>
+                    <button class = "shop_del_btn">
+                        <i class = "fa fa-times-circle"></i>
+                    </button>
+                </li>
+                <li class = "shopping_list">
+                    <div class = "shopping_item_quantity">
+                        <input type = "number" step = "0.1" value = "0.5" class = "shop_item_count">
+                        <p>cup</p>
+                    </div>
+                        <span class = "shopping_item_name">Ricotta cheese</span>
+                    <button class = "shop_del_btn">
+                        <i class = "fa fa-times-circle"></i>
+                    </button>
+                </li>
+                <li class = "shopping_list">
+                    <div class = "shopping_item_quantity">
+                        <input type = "number" step = "0.1" value = "3.5" class = "shop_item_count">
+                        <p>tbsp</p>
+                    </div>
+                        <span class = "shopping_item_name">Toasted almond slices</span>
+                    <button class = "shop_del_btn">
+                        <i class = "fa fa-times-circle"></i>
+                    </button>
+                </li>
+                <li class = "shopping_list">
+                    <div class = "shopping_item_quantity">
+                        <input type = "number" step = "0.1" value = "0.5" class = "shop_item_count">
+                        <p>tbsp</p>
+                    </div>
+                        <span class = "shopping_item_name">Sea salt</span>
+                    <button class = "shop_del_btn">
+                        <i class = "fa fa-times-circle"></i>
+                    </button>
+                </li>
+                <li class = "shopping_list">
+                    <div class = "shopping_item_quantity">
+                        <input type = "number" step = "0.1" value = "0.25" class = "shop_item_count">
+                        <p>cup</p>
+                    </div>
+                        <span class = "shopping_item_name">Minced green onions</span>
+                    <button class = "shop_del_btn">
+                        <i class = "fa fa-times-circle"></i>
+                    </button>
+                </li>
+                <li class = "shopping_list">
+                    <div class = "shopping_item_quantity">
+                        <input type = "number" step = "10" value = "45" class = "shop_item_count">
+                        <p>g</p>
+                    </div>
+                        <span class = "shopping_item_name">Sesame seeds</span>
+                    <button class = "shop_del_btn">
+                        <i class = "fa fa-times-circle"></i>
+                    </button>
+                </li>-->
+            </ul>
+            <div class = "copyright">
+                &copy; by Sandeep kumar Kairamkonda. Powered by 
+                <a href = "http://forkify-api.herokuapp.com" target="_blank" class = "link"><br>forkify-api.com.</a>
+            </div>
+        </div>
+    </div>
+<script src="js/bundle.js"></script></body>
+</html>

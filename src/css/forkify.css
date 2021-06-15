@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 2 * 4vw);
+}
+
+.container {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    width: 100%;
+    height: calc();
+    border: 1px solid #fff;
+    background: #fff;
+}
+
+.container .header {
+    display: flex;
+}
+
+.container .header .logo img{
+    width: 100px;
+    height: 100px;
+}
